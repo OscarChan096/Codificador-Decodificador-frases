@@ -5,6 +5,7 @@ const text = document.getElementById('input-text');
 const result = document.getElementById('result');
 const info = document.getElementById('info');
 const btnCopy = document.getElementById('btn-copy');
+const img = document.getElementById('img-res');
 
 const encriptar = text => {
     text = text.split('');
@@ -38,6 +39,7 @@ const btnEncriptar = () => {
         result.innerText = encriptar(textResult);
         info.classList.add('hidden');
         btnCopy.style.display = 'block';
+        img.style.display = 'none';
     } else {
         alert('ingrese texto para encriptar');
     }
@@ -50,6 +52,7 @@ const btnDesencriptar = () => {
         result.innerHTML = desencriptar(textResult);
         info.classList.add('hidden');
         btnCopy.style.display = 'block';
+        img.style.display = 'none';
     } else {
         alert('ingrese texto para desencriptar');
     }

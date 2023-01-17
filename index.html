@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codificador-Decodificador</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -14,22 +16,27 @@
         <img class='logosvg' src="./assets/logo.svg" alt="logo" />
     </header>
     <main>
-        <textarea id="input-text" rows="6" cols="50" placeholder="Ingrese el texto aqui"></textarea>
-        <div class="frame1">
-            <img src="./assets/info.svg" alt="info" />
-            <label>solo letras minusculas y sin acentos</label>
-        </div>
-        <div class="frame3">
-            <button id="encriptar" class="encriptar btn" onclick="btnEncriptar()">Encriptar</button>
-            <button id="desencriptar" class="desencriptar btn" onclick="btnDesencriptar()">Desencriptar</button>
-        </div>
-        <div class="frame5">
-            <div>
-                <label id="result" class="label1">Ningún mensaje fue encontrado</label>
-                <label id="info" class="label2">Ingresa el texto que desees encriptar o desencriptar.</label>
-                <button id="btn-copy" class="btn btn-copiar" onclick="copyToClipboard()">COPIAR</button>
+        <section>
+            <textarea id="input-text" rows="6" cols="50" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="frame1">
+                <img src="./assets/info.svg" alt="info" />
+                <label>solo letras minusculas y sin acentos</label>
             </div>
-        </div>
+            <div class="frame3">
+                <button id="encriptar" class="encriptar btn" onclick="btnEncriptar()">Encriptar</button>
+                <button id="desencriptar" class="desencriptar btn" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <div class="frame5">
+                <div>
+                    <img id="img-res" src="./assets/muneco.svg" alt="img" />
+                    <label id="result" class="label1">Ningún mensaje fue encontrado</label>
+                    <label id="info" class="label2">Ingresa el texto que desees encriptar o desencriptar.</label>
+                    <button id="btn-copy" class="btn btn-copiar" onclick="copyToClipboard()">COPIAR</button>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="./js/script.js"></script>
 </body>
